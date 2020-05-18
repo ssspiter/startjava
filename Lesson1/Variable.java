@@ -1,7 +1,5 @@
-public class Variable 
-{
-	public static void main (String[] args) 
-	{
+public class Variable {
+	public static void main(String[] args) {
 		byte numberOfCores = 2;
 		short processorSpeed = 2000;
 		int cashL2PerCore = 256;
@@ -17,7 +15,7 @@ public class Variable
 		System.out.println ("Размер кэша L3 = " + cashL3);
 		System.out.println ("Диагональ экрана = " + display);
 		System.out.println ("Объем HDD = " + storage);
-		System.out.println ("Серийный номер начинается с '" + serialNumberFirstLetter +"'");
+		System.out.println ("Серийный номер начинается с '" + serialNumberFirstLetter + "'");
 		System.out.println ("Этот ноутбук Сергея = " + myNotebook);
 	}
 }
