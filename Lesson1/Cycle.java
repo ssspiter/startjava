@@ -19,13 +19,13 @@ public class Cycle {
 		int l = 0;
 		do {
 			if (n % 2 == 0) {
-                n++;
-            } else {
-                l += n;
-                n++;
-            }
-        }
-        while (n <= 20);
+				n++;
+			} else {
+				l += n;
+				n++;
+			}
+		}
+		while (n <= 20);
         System.out.println(l);
 	}
 }
