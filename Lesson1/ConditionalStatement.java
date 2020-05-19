@@ -1,7 +1,6 @@
 public class ConditionalStatement {
 
 	public static void main(String[] args) {
-		
 		int age = 44;
 		if (age > 20) {
 			System.out.println("Ура, ваш возраст больше 20");
@@ -26,8 +25,7 @@ public class ConditionalStatement {
 		char firstNameChar = 'S';
 		if (firstNameChar == 'M') {
 			System.out.println("Первая буква вашего имени - M");
-		}
-		else if (firstNameChar == 'I') {
+		} else if (firstNameChar == 'I') {
 			System.out.println("Первая буква вашего имени - I");
 		} else {
 			System.out.println("Ваше имя не начинается ни с M, ни с I");

@@ -1,4 +1,5 @@
 public class Calc {
+    
     public static void main(String[] args) {
         int i = 8, j = 4;
         int result = 0;
@@ -14,35 +15,24 @@ public class Calc {
         if (i >= 0 && j >= 0) {
             if (symbol == '+') {
                 result = i + j;
-            } else {
-                if (symbol == '-') {
+            } else if (symbol == '-') {
                     result = i - j;
-                } else {
-                    if (symbol == '*') {
-                        result = i * j;
-                    } else {
-                        if (symbol == '/') {
-                            result = i / j;
-                        } else {
-                            if (symbol == '^') {
-                                result = i;
-                                int m = j;
-                                while (m > 1) {
-                                    result *= i;
-                                    m--;
-                                }
-                            } else {
-                                if (symbol == '%') {
-                                    result = i % j;
-                                }
-                            }
-                        }
+            } else if (symbol == '*') {
+                    result = i * j;
+            } else if (symbol == '/') {
+                    result = i / j;
+            } else if (symbol == '^') {
+                    result = i;
+                    int m = j;
+                    while (m > 1) {
+                        result *= i;
+                        m--;
                     }
-                }
+            } else if (symbol == '%') {
+                    result = i % j;
             }
             System.out.println("Результат вычисления " + i + symbol + j + "=" + result);
-        } else {
+        } else 
             System.out.print("Вы ввели отрицательное число");
-        }
     }
 }
