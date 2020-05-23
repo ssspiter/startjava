@@ -1,25 +1,25 @@
-public class GuessTheNumber {
+public class GuessNumber {
 
 	public static void main(String[] args) {
-		int number = 72;
-		int variant = 50;
+		int guessedNumber = 72;
+		int shot = 56;
 		System.out.println("Компьютер загадал число в интервале 0 - 100");
 		System.out.println("Угадай какое это число, введи вариант");
-		System.out.println("Ваше число: " + variant);
+		System.out.println("Ваше число: " + shot);
 		
-		if (variant > number) {
-			while (variant >= number) {
+		if (shot > guessedNumber) {
+			while (shot > guessedNumber) {
 				System.out.println("Ваше число больше загаданного. Введите новое число");
-				variant --;
-				System.out.println("Ваше число: " + variant);
+				shot --;
+				System.out.println("Ваше число: " + shot);
 			}
 		} else { 
-			while (variant <= number) {
+			while (shot < guessedNumber) {
 				System.out.println("Ваше число меньше загаданного. Введите новое число");
-				variant ++;
-				System.out.println("Ваше число: " + variant);
+				shot ++;
+				System.out.println("Ваше число: " + shot);
 			}
 		}
-		System.out.println("Вы угадали, загаданное число: " + variant);
+		System.out.println("Вы угадали, загаданное число: " + shot);
 	}
 }
