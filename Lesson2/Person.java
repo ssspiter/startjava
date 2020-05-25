@@ -6,16 +6,16 @@ public class Person {
 	float weight = 80.5f;
 	int age = 40;
 
-	void move(){
+	void move() {
 		System.out.println("пройдено 100 шагов");
 	}
 
-	boolean sitDown(){
+	boolean sit() {
 		System.out.println("Егор сидит");
 		return true;
 	}
 
-	void run(){
+	void run() {
 		System.out.println("Егор пробежал 5км");
 	}
 
@@ -31,5 +31,4 @@ public class Person {
 	void learnJava() {
 		System.out.println("Изучена первая тема");
 	}
-
 }
