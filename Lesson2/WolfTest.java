@@ -1,15 +1,15 @@
 public class WolfTest {
 
 	public static void main(String[] args) {
-		Volf volfOne = new Volf();
-		volfOne.gender = "кабель";
-		volfOne.name = "Вожак";
-		volfOne.weight = 35.6f;
-		volfOne.color = "серый";
+		Wolf wolfOne = new Wolf();
+		wolfOne.gender = "кабель";
+		wolfOne.name = "Вожак";
+		wolfOne.weight = 35.6f;
+		wolfOne.color = "серый";
 
-		System.out.println("Волк по кличке " + volfOne.name + ", " + volfOne.gender + ", цвет " + volfOne.color + ", вес " + volfOne.weight);
+		System.out.println("Волк по кличке " + wolfOne.name + ", " + wolfOne.gender + ", цвет " + wolfOne.color + ", вес " + wolfOne.weight);
 
-		volfOne.walk();
-		volfOne.hunt();
+		wolfOne.walk();
+		wolfOne.hunt();
 	}
 }
