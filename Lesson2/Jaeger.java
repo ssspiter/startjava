@@ -27,6 +27,30 @@ public class Jaeger {
 		this.bodyLanguage = bodyLanguage;
 	}
 
+	public String getModelName() {
+		return modelName;
+	}
+
+	public String getMark() {
+		return mark;
+	}
+
+	public String getLaunched() {
+		return launched;
+	}
+
+	public String getBodyLanguage() {
+		return bodyLanguage;
+	}
+
+	public float getWeight() {
+		return weight;
+	}
+
+	public float getHeight() {
+		return height;
+	}
+
 	public void move() {
 		System.out.println("Пройдено 10 шагов");
 	}
@@ -38,16 +62,4 @@ public class Jaeger {
 	public void useCanon() {
 		System.out.println("Выстрел произведен");
 	}
-
-	public void information() {
-		System.out.println("Model Name: " + modelName);
-		System.out.println("Mark: " + mark);
-		System.out.println("Weight: " + weight);
-		System.out.println("Height: " + height);
-		System.out.println("Launched: " + launched);
-		System.out.println("Body Language: " + bodyLanguage);
-		System.out.println();
-
-	}
-
 }

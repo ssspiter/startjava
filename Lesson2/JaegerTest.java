@@ -17,8 +17,20 @@ public class JaegerTest {
 		robot2.setHeight(73.21f);
 		robot2.setBodyLanguage("Counter Striker");
 		
-		robot1.information();
-		robot2.information();
+		System.out.println("Model Name: " + robot1.getModelName());
+		System.out.println("Mark: " + robot1.getMark());
+		System.out.println("Weight: " + robot1.getWeight());
+		System.out.println("Height: " + robot1.getHeight());
+		System.out.println("Launched: " + robot1.getLaunched());
+		System.out.println("Body Language: " + robot1.getBodyLanguage());
+		System.out.println();
 
+		System.out.println("Model Name: " + robot2.getModelName());
+		System.out.println("Mark: " + robot2.getMark());
+		System.out.println("Weight: " + robot2.getWeight());
+		System.out.println("Height: " + robot2.getHeight());
+		System.out.println("Launched: " + robot2.getLaunched());
+		System.out.println("Body Language: " + robot2.getBodyLanguage());
+		System.out.println();
 	}
 }
