@@ -3,27 +3,41 @@ import java.util.Scanner;
 public class CalculatorTest {
     
     public static void main(String[] args) {
-        Calculator set = new Calculator();
+        Calculator example = new Calculator();
         Scanner scan = new Scanner(System.in);
+        String run;
         
         do {
             System.out.print("Введите первое число: ");
-            set.num1 = scan.nextInt();
+            example.setNum1(scan.nextInt());
             System.out.println();
 
             System.out.print("Введите второе число: ");
-            set.num2 = scan.nextInt();
+            example.setNum2(scan.nextInt());
             System.out.println();
 
             System.out.print("Укажите математическую операцию: ");
-            set.operation = scan.next().charAt(0);
+            example.setOperation(scan.next().charAt(0));
             System.out.println();
 
-            set.calculation();
-            System.out.println("Результат вычисления: " + set.num1 + set.operation + set.num2 + "=" + set.result);
-            System.out.print("Хотите продолжить? (Y/N): ");
-        } while (!"N".equals(scan.next()));
+            example.calculate();
+            System.out.print("Результат вычисления: " + example.getNum1() + example.getOperation());
+            System.out.println(example.getNum2() + "=" + example.getResult());
+            
+            do {
+                System.out.print("Хотите продолжить? (Y/N): ");
+                run = scan.next();
+
+                if (run.equalsIgnoreCase("Y")) {
+                    break;
+                } else {
+                    if (run.equalsIgnoreCase("N")) {
+                        break;
+                    }
+                }
+            }while (true);
+
+        } while (!"N".equalsIgnoreCase(run));
         System.out.println();
-    
     }
 }
