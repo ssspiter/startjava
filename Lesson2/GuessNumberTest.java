@@ -36,9 +36,9 @@ public class GuessNumberTest {
 					break;
 				} else {
 					do {
-                		System.out.print("Хотите продолжить? (Y/N): ");
+						System.out.print("Хотите продолжить? (Y/N): ");
                 		answer = scan.next();
-            		} while (!answer.equalsIgnoreCase("Y") && !answer.equalsIgnoreCase("N"));
+                	} while (!answer.equalsIgnoreCase("Y") && !answer.equalsIgnoreCase("N"));
 				}
 			}
 		} while (!game.result.equals("Вы угадали!"));
